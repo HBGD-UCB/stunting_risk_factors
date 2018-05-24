@@ -2,7 +2,10 @@
 title: "Risk Factors of Stunting"
 author: "Jeremy Coyle"
 date: "5/24/2018"
-output: html_document
+output: 
+  html_document:
+    keep_md: TRUE
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
