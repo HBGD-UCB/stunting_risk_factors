@@ -2,7 +2,6 @@
   "roles": [
     "exclude",
     "strata",
-    "study"
     "id",
     "W",
     "A",
@@ -17,16 +16,13 @@
       "sex"
     ],
     "Y": [
-      "ever_stunted"
+      "stunted"
     ],
     "id": [
-        "subjid"
-    ],
-    "study": [
-        "studyid"
+        "id"
     ],
     "strata": [
-        "agecat"
+        "agecat", "studyid"
     ]
   },
   "script_params": {

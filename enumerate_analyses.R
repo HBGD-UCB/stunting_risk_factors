@@ -1,4 +1,5 @@
 library(longbowtools)
+library(jsonlite)
 inputs <- "inputs_template.json"
 default_params <- fromJSON(inputs)
 V <- c("agecat","studyid")

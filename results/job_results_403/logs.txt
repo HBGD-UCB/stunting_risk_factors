@@ -1,180 +1,0 @@
-[jeremy.coyle@54.165.121.182] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.165.121.182] run: mkdir -p /tmp/49f616c9-d5d5-44f3-9e64-2135b4c6afec
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.165.121.182] run: mkdir -p /tmp/50771e84-a85e-4311-9935-98b008730a76
-[jeremy.coyle@54.165.121.182] put: /tmp/tmpwrzz5ott/script.Rmd -> /tmp/50771e84-a85e-4311-9935-98b008730a76/script.Rmd
-Put code at /tmp/50771e84-a85e-4311-9935-98b008730a76/script.Rmd
-[jeremy.coyle@54.165.121.182] put: /app/runner.R -> /tmp/50771e84-a85e-4311-9935-98b008730a76/runner.R
-[jeremy.coyle@54.165.121.182] put: /tmp/tmpwrzz5ott/inputs.json -> /tmp/50771e84-a85e-4311-9935-98b008730a76/inputs.json
-Put inputs at /tmp/50771e84-a85e-4311-9935-98b008730a76/inputs.json
-[jeremy.coyle@54.165.121.182] put: /tmp/tmpwrzz5ott/provision.sh -> /tmp/50771e84-a85e-4311-9935-98b008730a76/provision.sh
-Put provision script at /tmp/50771e84-a85e-4311-9935-98b008730a76/provision.sh
-Output PUT URL
-https://tlapp.s3.amazonaws.com/49f616c9-d5d5-44f3-9e64-2135b4c6afec.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=S76A1vrQwKiP9GtEaODB8SiWzYY%3D&Expires=1529170324
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/50771e84-a85e-4311-9935-98b008730a76/runner.R /tmp/50771e84-a85e-4311-9935-98b008730a76/script.Rmd /tmp/50771e84-a85e-4311-9935-98b008730a76/inputs.json /tmp/49f616c9-d5d5-44f3-9e64-2135b4c6afec
-[jeremy.coyle@54.165.121.182] put: /tmp/tmpwrzz5ott/x.py -> /tmp/50771e84-a85e-4311-9935-98b008730a76/x.py
-Put code at /tmp/50771e84-a85e-4311-9935-98b008730a76/x.py
-[jeremy.coyle@54.165.121.182] put: /tmp/tmpwrzz5ott/wrapper.sh -> /tmp/50771e84-a85e-4311-9935-98b008730a76/wrapper.sh
-Put code at /tmp/50771e84-a85e-4311-9935-98b008730a76/wrapper.sh
-[jeremy.coyle@54.165.121.182] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/403/append_log/; screen -d -m python x.py; sleep 1
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('HBGD-UCB/longbowRiskFactors')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('jeremyrcoyle/skimr@vector_types')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/delayed')
-> 
-> 
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   7%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |  10%
-  ordinary text without R code
-
-  |                                                                         |.........                                                        |  13%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-nchldlt5ever_stuntedsubjidc("agecat", "studyid")
-FALSENULL
-  |                                                                         |...........                                                      |  17%
-  ordinary text without R code
-
-  |                                                                         |.............                                                    |  20%
-label: preprocessing
-  |                                                                         |...............                                                  |  23%
-   inline R code fragments
-
-  |                                                                         |.................                                                |  27%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |....................                                             |  30%
-  ordinary text without R code
-
-  |                                                                         |......................                                           |  33%
-  |                                                                         |..............................                                   |  47%
-label: drop_strata (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |................................                                 |  50%
-  ordinary text without R code
-
-  |                                                                         |...................................                              |  53%
-label: stratified_tmle (with options) 
-List of 1
- $ message: logi FALSE
-
-Quitting from lines 191-197 (REPORT.Rmd) 
-Error in setnames(matches, c("intervention", "baseline")) : 
-  Can't assign 2 names to a 0 column data.table
-Calls: run_internal ... format_results -> get_intervention_levels -> setnames
-
-Execution halted
-49f616c9-d5d5-44f3-9e64-2135b4c6afec/
-49f616c9-d5d5-44f3-9e64-2135b4c6afec/REPORT.Rmd
-49f616c9-d5d5-44f3-9e64-2135b4c6afec/inputs.json
-{"status": "success"}
