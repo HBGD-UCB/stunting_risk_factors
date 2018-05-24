@@ -9,7 +9,7 @@
   ],
    "data":{
       "uri": "https://git.ghap.io/stash/scm/hbgd-teams/UCB-SuperLearner.git",
-      "repository_path":"Stunting rallies/stunting_prevalence_analytic.csv"
+      "repository_path":"Stunting rallies/st_prev_rf.Rdata"
    },
   "nodes": {
     "A": [

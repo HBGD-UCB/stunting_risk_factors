@@ -61,7 +61,11 @@ pooled_rrs <- rr_results[,pool_rr(.SD),
 agecat_levels <- c("Birth", "3 months", "6 months", 
                    "9 months", "12 months", "18 months", 
                    "24 months")
-pooled_rrs[,agecat:=factor(agecat, levels=agecat_levels)]
+agecat_levels_reduced <- c("Birth", "6 months", 
+                           "12 months", "24 months")
+
+pooled_rrs <- pooled_rrs[agecat%in%agecat_levels_reduced]
+pooled_rrs[,agecat:=factor(agecat, levels=agecat_levels_reduced)]
 pooled_rrs[,sig:=1<ci_lower|ci_upper<1]
 pooled_rrs[,sig_alpha:=0.3+0.7*sig]
 # set plot bounds so plots are comparable
@@ -70,22 +74,30 @@ xmin <- 0
 xmax <- 10
 ```
 
-```{r plot_pooled,results="asis", warning=FALSE}
+```{r plot_pooled,results="asis", warning=FALSE, fig.height=6, fig.width=10}
 intervention_variables <- unique(pooled_rrs$intervention_variable)
+
 for(rf in intervention_variables) {
   cat("  \n###",  rf, "  \n")
   
   one_pooled_rr <- pooled_rrs[intervention_variable==rf]
 
   cat("reference level:",  one_pooled_rr$baseline_level[1], "  \n")
-  dodge=position_dodge(width=-0.8)
+  dodge=position_dodge(width=0.7)
+  # rrplot <- ggplot(one_pooled_rr, 
+  #                  aes(y=estimate,ymin=ci_lower,ymax=ci_upper,
+  #                      x=intervention_level, color=agecat))+
+  #   geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
+  #   geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
+  #   geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+ylab("Relative Risk")+scale_color_discrete("Age Cohort")+coord_flip()+scale_alpha_continuous(guide=FALSE,limits=c(0,1))
   rrplot <- ggplot(one_pooled_rr, 
                    aes(y=estimate,ymin=ci_lower,ymax=ci_upper,
                        x=intervention_level, color=agecat))+
     geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
-    geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+ylab("Relative Risk")+scale_color_discrete("Age Cohort")+coord_flip()+scale_alpha_continuous(guide=FALSE,limits=c(0,1))
-  print(rrplot)
+    geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+ylab("Relative Risk")+scale_color_discrete("Age Cohort")+scale_alpha_continuous(guide=FALSE,limits=c(0,1))+
+    theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+    print(rrplot)
   cat("  \n")
 }
 ```

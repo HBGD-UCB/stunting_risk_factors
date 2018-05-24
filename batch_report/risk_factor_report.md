@@ -18,19 +18,19 @@ output:
 
   
 ### sex   
-reference level: Female   
+reference level: NA   
 ![](risk_factor_report_files/figure-html/plot_pooled-1.png)<!-- -->  
   
 ### gagebrth   
-reference level: (266-273]   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/plot_pooled-2.png)<!-- -->  
   
 ### birthwt   
-reference level: (2600-2970]   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/plot_pooled-3.png)<!-- -->  
   
 ### birthlen   
-reference level: (46.8-48.8]   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/plot_pooled-4.png)<!-- -->  
   
 ### enstunt   
@@ -46,19 +46,19 @@ reference level: 0
 ![](risk_factor_report_files/figure-html/plot_pooled-7.png)<!-- -->  
   
 ### mage   
-reference level: (20-24]   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/plot_pooled-8.png)<!-- -->  
   
 ### mhtcm   
-reference level: (149.6-154.9]   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/plot_pooled-9.png)<!-- -->  
   
 ### mwtkg   
-reference level: (42.4-49.2]   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/plot_pooled-10.png)<!-- -->  
   
 ### mbmi   
-reference level: (18.7-20.67]   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/plot_pooled-11.png)<!-- -->  
   
 ### single   
@@ -66,11 +66,11 @@ reference level: 0
 ![](risk_factor_report_files/figure-html/plot_pooled-12.png)<!-- -->  
   
 ### fage   
-reference level: (24-28]   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/plot_pooled-13.png)<!-- -->  
   
 ### fhtcm   
-reference level: (168-173]   
+reference level: <=168   
 ![](risk_factor_report_files/figure-html/plot_pooled-14.png)<!-- -->  
   
 ### nrooms   
@@ -82,7 +82,7 @@ reference level: 3 or less
 ![](risk_factor_report_files/figure-html/plot_pooled-16.png)<!-- -->  
   
 ### nchldlt5   
-reference level: 0   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/plot_pooled-17.png)<!-- -->  
   
 ### hhwealth_quart   
