@@ -679,23 +679,23 @@ reference level: Q1
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/par_forest-1.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/par_forest-2.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-3.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-4.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-5.png)<!-- -->  
   
 #### Child's sex  
@@ -703,80 +703,80 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/par_forest-6.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-7.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-8.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/par_forest-9.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-10.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/par_forest-11.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-12.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/par_forest-13.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/par_forest-14.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/par_forest-15.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/par_forest-16.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/par_forest-17.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-18.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/par_forest-19.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-20.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-21.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/par_forest-22.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-23.png)<!-- -->  
   
   
@@ -786,23 +786,23 @@ reference level: NA
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/par_forest-24.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/par_forest-25.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-26.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-27.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-28.png)<!-- -->  
   
 #### Child's sex  
@@ -810,80 +810,80 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/par_forest-29.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-30.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-31.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/par_forest-32.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-33.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/par_forest-34.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-35.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/par_forest-36.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/par_forest-37.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/par_forest-38.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/par_forest-39.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/par_forest-40.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-41.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/par_forest-42.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-43.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-44.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/par_forest-45.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-46.png)<!-- -->  
   
   
@@ -893,23 +893,23 @@ reference level: NA
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/par_forest-47.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/par_forest-48.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-49.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-50.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-51.png)<!-- -->  
   
 #### Child's sex  
@@ -917,84 +917,84 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/par_forest-52.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-53.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-54.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/par_forest-55.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-56.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/par_forest-57.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-58.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/par_forest-59.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/par_forest-60.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/par_forest-61.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/par_forest-62.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/par_forest-63.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/par_forest-64.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/par_forest-65.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/par_forest-66.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-67.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/par_forest-68.png)<!-- -->  
   
 #### Father height  
-reference level: NA   
+reference level: <=168   
 ![](risk_factor_report_files/figure-html/par_forest-69.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/par_forest-70.png)<!-- -->  
   
   
@@ -1007,23 +1007,23 @@ reference level: NA
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/paf_forest-1.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/paf_forest-2.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-3.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-4.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-5.png)<!-- -->  
   
 #### Child's sex  
@@ -1031,80 +1031,80 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/paf_forest-6.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-7.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-8.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-9.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-10.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/paf_forest-11.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-12.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/paf_forest-13.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/paf_forest-14.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/paf_forest-15.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/paf_forest-16.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/paf_forest-17.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-18.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/paf_forest-19.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-20.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-21.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/paf_forest-22.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-23.png)<!-- -->  
   
   
@@ -1114,23 +1114,23 @@ reference level: NA
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/paf_forest-24.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/paf_forest-25.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-26.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-27.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-28.png)<!-- -->  
   
 #### Child's sex  
@@ -1138,80 +1138,80 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/paf_forest-29.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-30.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-31.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-32.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-33.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/paf_forest-34.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-35.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/paf_forest-36.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/paf_forest-37.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/paf_forest-38.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/paf_forest-39.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/paf_forest-40.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-41.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/paf_forest-42.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-43.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-44.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/paf_forest-45.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-46.png)<!-- -->  
   
   
@@ -1221,23 +1221,23 @@ reference level: NA
 ### Child characteristics  
   
 #### Birth length  
-reference level: NA   
+reference level: <=46.8   
 ![](risk_factor_report_files/figure-html/paf_forest-47.png)<!-- -->  
   
 #### Birthweight  
-reference level: NA   
+reference level: <=2600   
 ![](risk_factor_report_files/figure-html/paf_forest-48.png)<!-- -->  
   
 #### Calendar month of birth  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-49.png)<!-- -->  
   
 #### Calendar month of measurement  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-50.png)<!-- -->  
   
 #### Child delivered at home  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-51.png)<!-- -->  
   
 #### Child's sex  
@@ -1245,84 +1245,84 @@ reference level: NA
 ![](risk_factor_report_files/figure-html/paf_forest-52.png)<!-- -->  
   
 #### Stunted at enrollment  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-53.png)<!-- -->  
   
 #### Vaginal delivery  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-54.png)<!-- -->  
   
   
 ### Household characteristics  
   
 #### Asset based wealth index  
-reference level: NA   
+reference level: Wealth Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-55.png)<!-- -->  
   
 #### nchldlt5  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-56.png)<!-- -->  
   
 #### nhh  
-reference level: NA   
+reference level: 3 or less   
 ![](risk_factor_report_files/figure-html/paf_forest-57.png)<!-- -->  
   
 #### Number of rooms in household  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-58.png)<!-- -->  
   
 #### USAID Household Food Insecurity Access Scale (HFIAS) category  
-reference level: NA   
+reference level: Food Secure   
 ![](risk_factor_report_files/figure-html/paf_forest-59.png)<!-- -->  
   
   
 ### Maternal characteristics  
   
 #### Gestational age at birth  
-reference level: NA   
+reference level: <=266   
 ![](risk_factor_report_files/figure-html/paf_forest-60.png)<!-- -->  
   
 #### Maternal age  
-reference level: NA   
+reference level: <=20   
 ![](risk_factor_report_files/figure-html/paf_forest-61.png)<!-- -->  
   
 #### Maternal BMI  
-reference level: NA   
+reference level: <=18.7   
 ![](risk_factor_report_files/figure-html/paf_forest-62.png)<!-- -->  
   
 #### Maternal height  
-reference level: NA   
+reference level: <=149.6   
 ![](risk_factor_report_files/figure-html/paf_forest-63.png)<!-- -->  
   
 #### Maternal parity  
-reference level: NA   
+reference level: 1   
 ![](risk_factor_report_files/figure-html/paf_forest-64.png)<!-- -->  
   
 #### Maternal weight  
-reference level: NA   
+reference level: <=42.4   
 ![](risk_factor_report_files/figure-html/paf_forest-65.png)<!-- -->  
   
 #### Mother is unmarried  
-reference level: NA   
+reference level: 0   
 ![](risk_factor_report_files/figure-html/paf_forest-66.png)<!-- -->  
   
 #### Mother's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-67.png)<!-- -->  
   
   
 ### Paternal characteristics  
   
 #### Father age  
-reference level: NA   
+reference level: <=24   
 ![](risk_factor_report_files/figure-html/paf_forest-68.png)<!-- -->  
   
 #### Father height  
-reference level: NA   
+reference level: <=168   
 ![](risk_factor_report_files/figure-html/paf_forest-69.png)<!-- -->  
   
 #### Father's education  
-reference level: NA   
+reference level: Q1   
 ![](risk_factor_report_files/figure-html/paf_forest-70.png)<!-- -->  
   
   

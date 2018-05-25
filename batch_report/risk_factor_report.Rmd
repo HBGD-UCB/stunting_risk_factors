@@ -176,7 +176,7 @@ par_results[,sig:=0<ci_lower|ci_upper<0]
 par_results[,sig_alpha:=0.3+0.7*sig]
 
 par_forest_plot <- function(data){
-  cat("reference level:",  data$baseline_level[1], "  \n")
+  cat("reference level:",  data$intervention_level[1], "  \n")
   par_plot <- ggplot(data,aes(x=studyid,y=estimate,ymin=ci_lower,ymax=ci_upper))+
     geom_point(aes(alpha=sig_alpha), size=2)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
@@ -199,7 +199,7 @@ paf_results[,sig:=0<ci_lower|ci_upper<0]
 paf_results[,sig_alpha:=0.3+0.7*sig]
 
 paf_forest_plot <- function(data){
-  cat("reference level:",  data$baseline_level[1], "  \n")
+  cat("reference level:",  data$intervention_level[1], "  \n")
   paf_plot <- ggplot(data,aes(x=studyid,y=estimate,ymin=ci_lower,ymax=ci_upper))+
     geom_point(aes(alpha=sig_alpha), size=2)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
