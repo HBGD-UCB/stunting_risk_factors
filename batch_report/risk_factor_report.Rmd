@@ -1,11 +1,13 @@
 ---
 title: "Risk Factors of Stunting"
-author: "Jeremy Coyle"
-date: "5/24/2018"
+author: "UCB-SuperLearner Team"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 output: 
   html_document:
     keep_md: TRUE
     self_contained: true
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -15,18 +17,41 @@ library(ggplot2)
 knitr::opts_chunk$set(echo = FALSE)
 
 # load data
-load("../stunting_prevalance_results.rdata")
+load("../stunting_results.rdata")
 results <- setDT(results)
+variable_meta <- fread("ki_riskfactor_metadata.csv")
+intervention_meta <- variable_meta[,list(intervention_variable=variablename,
+                                         intervention_label=variablelabel, 
+                                         intervention_category=category,
+                                         intervention_units=units)]
+
+outcome_meta <- variable_meta[,list(outcome_variable=variablename,
+                                         outcome_label=variablelabel, 
+                                         outcome_category=category,
+                                         outcome_units=units)]
+
+results <- merge(results, intervention_meta, by="intervention_variable")
+results <- merge(results, outcome_meta, by="outcome_variable")
+
+
+agecat_levels <- c("Birth", "3 months", "6 months", 
+                   "9 months", "12 months", "18 months", 
+                   "24 months")
+agecat_levels_reduced <- c("Birth", "6 months", 
+                           "12 months", "24 months")
+
+results <- results[agecat%in%agecat_levels_reduced]
+results[,agecat:=factor(agecat, levels=agecat_levels_reduced)]
+
 ```
 
 # Pooled Results
-
-## Prevlanace of Stunting
 
 ```{r do_pooling}
 
 # extract RR results
 rr_results <- results[type=="RR"]
+
 one_result <- rr_results[intervention_level==">51"&agecat=="3 months"]
 pool_rr <- function(one_result){
   # get pooled estimate
@@ -36,7 +61,7 @@ pool_rr <- function(one_result){
   
   # make new pooled result row
   pooled_result <- one_result[1,]
-  pooled_result[,studyid:="pooled"]
+  pooled_result[,studyid:="Pooled"]
   pooled_result[,strata_label:=NULL]
 
   if(!inherits(pooled,"try-error")){
@@ -56,53 +81,135 @@ pool_rr <- function(one_result){
 }
 
 pooled_rrs <- rr_results[,pool_rr(.SD), 
-                          by=list(agecat,intervention_variable, intervention_level)]
+                          by=list(agecat,outcome_variable, intervention_category, 
+                                  intervention_variable, intervention_level)]
 
-agecat_levels <- c("Birth", "3 months", "6 months", 
-                   "9 months", "12 months", "18 months", 
-                   "24 months")
-agecat_levels_reduced <- c("Birth", "6 months", 
-                           "12 months", "24 months")
-
-pooled_rrs <- pooled_rrs[agecat%in%agecat_levels_reduced]
-pooled_rrs[,agecat:=factor(agecat, levels=agecat_levels_reduced)]
 pooled_rrs[,sig:=1<ci_lower|ci_upper<1]
 pooled_rrs[,sig_alpha:=0.3+0.7*sig]
 # set plot bounds so plots are comparable
 # todo: bounds in data are currently silly so these are set manually
-xmin <- 0
-xmax <- 10
+ymin <- min(pooled_rrs$ci_lower)
+ymax <- max(pooled_rrs$ci_lower)
 ```
 
-```{r plot_pooled,results="asis", warning=FALSE, fig.height=6, fig.width=10}
-intervention_variables <- unique(pooled_rrs$intervention_variable)
+```{r output_helper}
 
-for(rf in intervention_variables) {
-  cat("  \n###",  rf, "  \n")
+# print output and stratify by level
+hierarchical_plot_output <- function(data, strata_vars, plot_fun, section_level=1){
+  strata_var_name <- strata_vars[[1]]
+  remaining_strata_vars <- strata_vars[-1]
+  strata_values <- data[,strata_var_name,with=FALSE]
+  strata_levels <- sort(unique(unlist(strata_values)))
+  strata_level <- strata_levels[[1]]
+  for(strata_level in strata_levels){
+    header_markup <- paste0(rep("#",section_level),collapse="")  
+    cat("  \n", header_markup, " ", strata_level, "  \n", sep="")
+    subset <- data[which(strata_values==strata_level)]
+    
+    if(length(remaining_strata_vars)==0){
+      plot_fun(subset)
+    } else {
+      hierarchical_plot_output(subset, remaining_strata_vars, plot_fun, section_level+1)
+    }
+    
+    cat("  \n")
+  }
   
-  one_pooled_rr <- pooled_rrs[intervention_variable==rf]
-
-  cat("reference level:",  one_pooled_rr$baseline_level[1], "  \n")
-  dodge=position_dodge(width=0.7)
-  # rrplot <- ggplot(one_pooled_rr, 
-  #                  aes(y=estimate,ymin=ci_lower,ymax=ci_upper,
-  #                      x=intervention_level, color=agecat))+
-  #   geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
-  #   geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
-  #   geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+ylab("Relative Risk")+scale_color_discrete("Age Cohort")+coord_flip()+scale_alpha_continuous(guide=FALSE,limits=c(0,1))
-  rrplot <- ggplot(one_pooled_rr, 
-                   aes(y=estimate,ymin=ci_lower,ymax=ci_upper,
-                       x=intervention_level, color=agecat))+
-    geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
-    geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
-    geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+ylab("Relative Risk")+scale_color_discrete("Age Cohort")+scale_alpha_continuous(guide=FALSE,limits=c(0,1))+
-    theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
-    print(rrplot)
-  cat("  \n")
 }
+
+
 ```
 
-## Appendix 1 - Risk Factor Forest Plots
-```{r forest}
-# rr forest plots
+```{r plot_pooled,results="asis", warning=FALSE, fig.height=5, fig.width=10}
+
+rr_pooled_plot <- function(data){
+  cat("reference level:",  data$baseline_level[1], "  \n")
+    dodge=position_dodge(width=0.7)
+    rrplot <- ggplot(data, 
+                     aes(y=estimate,ymin=ci_lower,ymax=ci_upper,
+                         x=intervention_level, color=agecat))+
+      geom_point(aes(alpha=sig_alpha), size=2,position=dodge)+
+      geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2,position=dodge)+
+      geom_hline(aes(yintercept=1),linetype="dashed")+theme_bw()+xlab("")+
+      ylab("Relative Risk")+scale_color_discrete("Age Cohort")+
+      scale_alpha_continuous(guide=FALSE,limits=c(0,1))+
+      theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+ylim(ymin,ymax)
+      print(rrplot)
+        
+}
+
+
+strata_vars <- c("outcome_label","intervention_category","intervention_label")
+hierarchical_plot_output(pooled_rrs, strata_vars, rr_pooled_plot, 2)
+```
+
+# Appendix 1 - Relative Risk Forest Plots
+```{r rr_forest, results="asis", fig.height=9,fig.width=7}
+
+rr_with_pooled <- rbind(rr_results, pooled_rrs, fill=TRUE)
+rr_with_pooled[,sig:=1<ci_lower|ci_upper<1]
+rr_with_pooled[,sig_alpha:=0.3+0.7*sig]
+rr_with_pooled[,color:=studyid=="Pooled"]
+
+rr_forest_plot <- function(data){
+  cat("reference level:",  data$baseline_level[1], "  \n")
+  rr_forest <- ggplot(data,aes(x=studyid,y=estimate,ymin=ci_lower,ymax=ci_upper))+     
+      geom_point(aes(alpha=sig_alpha, color=color), size=2)+
+      geom_errorbar(aes(alpha=sig_alpha*0.7, color=color),width=0,size=2)+
+      geom_hline(aes(yintercept=1), linetype="dashed")+
+      coord_flip()+facet_grid(agecat~intervention_level,scales="free_y")+theme_bw()+
+      scale_alpha_continuous(guide=FALSE,limits=c(0,1))+ylab("Relative Risk")+xlab("Strata")+
+      scale_color_manual(values=c("black","red"),guide=FALSE)
+  print(rr_forest)
+}
+
+
+strata_vars <- c("outcome_label","intervention_category","intervention_label")
+hierarchical_plot_output(rr_with_pooled, strata_vars, rr_forest_plot, 2)
+```
+
+# Appendix 2 - Population Attributable Risk Forest Plots
+
+```{r par_forest, results="asis", fig.height=9,fig.width=7}
+par_results <- results[type=="PAR"]
+par_results[,sig:=0<ci_lower|ci_upper<0]
+par_results[,sig_alpha:=0.3+0.7*sig]
+
+par_forest_plot <- function(data){
+  cat("reference level:",  data$baseline_level[1], "  \n")
+  par_plot <- ggplot(data,aes(x=studyid,y=estimate,ymin=ci_lower,ymax=ci_upper))+
+    geom_point(aes(alpha=sig_alpha), size=2)+
+    geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
+    geom_hline(aes(yintercept=0), linetype="dashed")+
+    coord_flip()+facet_grid(agecat~.,scales="free_y")+theme_bw()+
+    scale_alpha_continuous(guide=FALSE,limits=c(0,1))+ylab("Relative Risk")+xlab("Strata")
+  print(par_plot)
+}
+
+strata_vars <- c("outcome_label","intervention_category","intervention_label")
+hierarchical_plot_output(par_results, strata_vars, par_forest_plot, 2)
+
+```
+
+# Appendix 3 - Population Attributable Fraction Forest Plots
+
+```{r paf_forest, results="asis", fig.height=9,fig.width=7}
+paf_results <- results[type=="PAF"]
+paf_results[,sig:=0<ci_lower|ci_upper<0]
+paf_results[,sig_alpha:=0.3+0.7*sig]
+
+paf_forest_plot <- function(data){
+  cat("reference level:",  data$baseline_level[1], "  \n")
+  paf_plot <- ggplot(data,aes(x=studyid,y=estimate,ymin=ci_lower,ymax=ci_upper))+
+    geom_point(aes(alpha=sig_alpha), size=2)+
+    geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
+    geom_hline(aes(yintercept=0), linetype="dashed")+
+    coord_flip()+facet_grid(agecat~.,scales="free_y")+theme_bw()+
+    scale_alpha_continuous(guide=FALSE,limits=c(0,1))+ylab("Relative Risk")+xlab("Strata")
+  print(paf_plot)
+}
+
+strata_vars <- c("outcome_label","intervention_category","intervention_label")
+hierarchical_plot_output(paf_results, strata_vars, paf_forest_plot, 2)
+
 ```

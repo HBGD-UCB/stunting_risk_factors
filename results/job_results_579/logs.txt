@@ -1,0 +1,239 @@
+[jeremy.coyle@54.157.34.221] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.157.34.221] run: mkdir -p /tmp/c819dd9e-7d5e-4dd0-a4cf-a27f5f2c9c56
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.157.34.221] run: mkdir -p /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5
+[jeremy.coyle@54.157.34.221] put: /tmp/tmphhawljn3/script.Rmd -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/script.Rmd
+Put code at /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/script.Rmd
+[jeremy.coyle@54.157.34.221] put: /app/runner.R -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/runner.R
+[jeremy.coyle@54.157.34.221] put: /tmp/tmphhawljn3/inputs.json -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/inputs.json
+Put inputs at /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/inputs.json
+[jeremy.coyle@54.157.34.221] put: /tmp/tmphhawljn3/provision.sh -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/provision.sh
+Put provision script at /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/provision.sh
+Output PUT URL
+https://tlapp.s3.amazonaws.com/c819dd9e-7d5e-4dd0-a4cf-a27f5f2c9c56.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=q%2B%2FiwGu7ban6v8isQxv67yf4YpQ%3D&Expires=1529868716
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/runner.R /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/script.Rmd /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/inputs.json /tmp/c819dd9e-7d5e-4dd0-a4cf-a27f5f2c9c56
+[jeremy.coyle@54.157.34.221] put: /tmp/tmphhawljn3/x.py -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/x.py
+Put code at /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/x.py
+[jeremy.coyle@54.157.34.221] put: /tmp/tmphhawljn3/wrapper.sh -> /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/wrapper.sh
+Put code at /tmp/add9a78d-618e-4178-b920-d77a96f4f7d5/wrapper.sh
+[jeremy.coyle@54.157.34.221] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/579/append_log/; screen -d -m python x.py; sleep 1
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+> 
+> 
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+> 
+> 
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   7%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |  10%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+feducyrssstuntedidc("agecat", "studyid")
+FALSENULL
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: preprocessing
+  |                                                                         |...............                                                  |  23%
+   inline R code fragments
+
+  |                                                                         |.................                                                |  27%
+label: print_adjustment_set (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  33%
+label: print_strata_variables (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |........................                                         |  37%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  40%
+label: print_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  47%
+label: drop_strata (with options) 
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  53%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 12 months, studyid: ki1000304b-SAS-FoodSuppl
+tmle for:	agecat: 12 months, studyid: ki1017093c-NIH-Crypto
+tmle for:	agecat: 12 months, studyid: ki1135781-COHORTS
+tmle for:	agecat: 18 months, studyid: ki1017093c-NIH-Crypto
+tmle for:	agecat: 18 months, studyid: ki1113344-GMS-Nepal
+tmle for:	agecat: 18 months, studyid: ki1135781-COHORTS
+tmle for:	agecat: 24 months, studyid: ki0047075b-MAL-ED
+tmle for:	agecat: 24 months, studyid: ki1017093c-NIH-Crypto
+tmle for:	agecat: 24 months, studyid: ki1113344-GMS-Nepal
+tmle for:	agecat: 24 months, studyid: ki1135781-COHORTS
+tmle for:	agecat: 3 months, studyid: ki1135781-COHORTS
+tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS
+tmle for:	agecat: 9 months, studyid: ki1017093c-NIH-Crypto
+tmle for:	agecat: 9 months, studyid: ki1135781-COHORTS
+  |                                                                         |.....................................                            |  57%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: plot_tsm
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: plot_rr
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  73%
+label: plot_paf
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: plot_par
+  |                                                                         |......................................................           |  83%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  87%
+label: data_summary
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  93%
+label: results_tables (with options) 
+{"status": "success"}

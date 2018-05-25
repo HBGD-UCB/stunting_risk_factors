@@ -1,0 +1,161 @@
+[jeremy.coyle@54.157.34.221] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.157.34.221] run: mkdir -p /tmp/6ab19a4c-f8d7-420f-87d1-f516e5c428f0
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.157.34.221] run: mkdir -p /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce
+[jeremy.coyle@54.157.34.221] put: /tmp/tmp5_003fgs/script.Rmd -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/script.Rmd
+Put code at /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/script.Rmd
+[jeremy.coyle@54.157.34.221] put: /app/runner.R -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/runner.R
+[jeremy.coyle@54.157.34.221] put: /tmp/tmp5_003fgs/inputs.json -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/inputs.json
+Put inputs at /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/inputs.json
+[jeremy.coyle@54.157.34.221] put: /tmp/tmp5_003fgs/provision.sh -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/provision.sh
+Put provision script at /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/provision.sh
+Output PUT URL
+https://tlapp.s3.amazonaws.com/6ab19a4c-f8d7-420f-87d1-f516e5c428f0.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=7%2BLteiOnfO3bO4JlqQp3J5oIqwU%3D&Expires=1529867091
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/runner.R /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/script.Rmd /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/inputs.json /tmp/6ab19a4c-f8d7-420f-87d1-f516e5c428f0
+[jeremy.coyle@54.157.34.221] put: /tmp/tmp5_003fgs/x.py -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/x.py
+Put code at /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/x.py
+[jeremy.coyle@54.157.34.221] put: /tmp/tmp5_003fgs/wrapper.sh -> /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/wrapper.sh
+Put code at /tmp/3301221a-c60f-4fb3-b545-fdf6662d19ce/wrapper.sh
+[jeremy.coyle@54.157.34.221] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/525/append_log/; screen -d -m python x.py; sleep 1
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
+> 
+> 
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/longbowtools')
+> 
+> 
+Running provision script
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+> 
+> 
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+> 
+> 
+Starting analysis
+
+
+processing file: REPORT.Rmd
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   7%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |......                                                           |  10%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  13%
+label: params (with options) 
+List of 2
+ $ warning: logi FALSE
+ $ message: logi FALSE
+
+Loading required package: graphics
+nchldlt5s03rec24idc("agecat", "studyid")
+FALSENULL
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: preprocessing
+Quitting from lines 76-115 (REPORT.Rmd) 
+Error in `[.data.table`(data, , apply(is.na(.SD), 1, any), .SDcols = drop_vars) : 
+  Some items of .SDcols are not column names (or are NA)
+Calls: run_internal ... eval -> eval -> process_missing -> [ -> [.data.table
+
+Execution halted
+6ab19a4c-f8d7-420f-87d1-f516e5c428f0/
+6ab19a4c-f8d7-420f-87d1-f516e5c428f0/REPORT.Rmd
+6ab19a4c-f8d7-420f-87d1-f516e5c428f0/inputs.json
+{"status": "success"}

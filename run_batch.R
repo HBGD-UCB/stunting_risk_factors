@@ -26,4 +26,4 @@ get_batch_results(job_ids, results_folder="results")
 results <- load_batch_results("results.rdata")
 
 # save concatenated results
-save(results, file="stunting_prevalance_results.rdata")
+save(results, file="stunting_results.rdata")
