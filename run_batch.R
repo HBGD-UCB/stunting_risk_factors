@@ -7,6 +7,7 @@ configure_cluster("~/cluster_credentials.json")
 
 
 rmd_filename <- system.file("templates/longbow_RiskFactors.Rmd", package="longbowRiskFactors")
+
 # inputs <- system.file("sample_data/ghap_test.json", package="longbowRiskFactors")
 inputs <- "inputs_template.json"
 

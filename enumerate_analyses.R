@@ -2,7 +2,7 @@ library(longbowtools)
 library(jsonlite)
 inputs <- "inputs_template.json"
 default_params <- fromJSON(inputs)
-V <- c("agecat","studyid")
+V <- c("agecat","studyid","country")
 
 A <- c("sex", "gagebrth", "birthwt", "birthlen", "enstunt", "vagbrth", 
   "hdlvry", "mage", "mhtcm", "mwtkg", "mbmi", "single", "fage", 

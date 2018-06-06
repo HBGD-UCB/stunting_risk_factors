@@ -9,20 +9,20 @@
   ],
    "data":{
       "uri": "https://git.ghap.io/stash/scm/hbgd-teams/UCB-SuperLearner.git",
-      "repository_path":"Stunting rallies/st_prev_rf.Rdata"
+      "repository_path":"Stunting rallies/st_cuminc_rf.Rdata"
    },
   "nodes": {
     "A": [
-      "sex"
+      "hhwealth_quart"
     ],
     "Y": [
-      "stunted"
+      "ever_stunted"
     ],
     "id": [
         "id"
     ],
     "strata": [
-        "agecat", "studyid"
+        "agecat", "studyid", "country"
     ]
   },
   "script_params": {
