@@ -26,4 +26,4 @@ feducyrs,Father's education,Paternal characteristics,Years,risk factor
 fhtcm,Father height,Paternal characteristics,Centimeters,risk factor
 sstunted,Point prevalence of severe stunting,,,outcome
 stunted,Point prevalence of stunting,,,outcome
-s03rec24,Proportion of children who were stunted between birth and 3 months who recovered by 24 months,,,
+s03rec24,"Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months",,,

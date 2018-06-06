@@ -1,0 +1,408 @@
+[jeremy.coyle@54.242.25.233] Executing task 'upload_to_ghap'
+[jeremy.coyle@54.242.25.233] run: mkdir -p /tmp/2f540e8e-26d6-410a-8d37-e60946f8c8d9
+Not going to clone git repo since it already exists
+[jeremy.coyle@54.242.25.233] run: mkdir -p /tmp/0267c358-6423-4647-b36c-31ab8d0cc138
+[jeremy.coyle@54.242.25.233] put: /tmp/tmpidms8spl/script.Rmd -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/script.Rmd
+Put code at /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/script.Rmd
+[jeremy.coyle@54.242.25.233] put: /app/runner.R -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/runner.R
+[jeremy.coyle@54.242.25.233] put: /tmp/tmpidms8spl/inputs.json -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/inputs.json
+Put inputs at /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/inputs.json
+[jeremy.coyle@54.242.25.233] put: /tmp/tmpidms8spl/provision.sh -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/provision.sh
+Put provision script at /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/provision.sh
+Output PUT URL
+https://tlapp.s3.amazonaws.com/2f540e8e-26d6-410a-8d37-e60946f8c8d9.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=EgGwuXpAd%2F29c22LxMzbTsy8PFc%3D&Expires=1530905431
+Command to run:
+Rscript --default-packages=methods,stats,utils /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/runner.R /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/script.Rmd /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/inputs.json /tmp/2f540e8e-26d6-410a-8d37-e60946f8c8d9
+[jeremy.coyle@54.242.25.233] put: /tmp/tmpidms8spl/x.py -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/x.py
+Put code at /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/x.py
+[jeremy.coyle@54.242.25.233] put: /tmp/tmpidms8spl/wrapper.sh -> /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/wrapper.sh
+Put code at /tmp/0267c358-6423-4647-b36c-31ab8d0cc138/wrapper.sh
+[jeremy.coyle@54.242.25.233] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1303/append_log/; screen -d -m python x.py; sleep 1
+Type 'demo()' for some demos, 'help()' for on-line help, or
+Type 'license()' or 'licence()' for distribution details.
+Type 'q()' to quit R.
+
+
+
+> 
+> 
+Type 'contributors()' for more information and
+
+'citation()' on how to cite R or R packages in publications.
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Type 'demo()' for some demos, 'help()' for on-line help, or
+Platform: x86_64-redhat-linux-gnu (64-bit)
+'help.start()' for an HTML browser interface to help.
+
+Type 'q()' to quit R.
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+
+You are welcome to redistribute it under certain conditions.
+> devtools::install_github('tlverse/longbowtools')
+Type 'license()' or 'licence()' for distribution details.
+> 
+> 
+  Natural language support but running in an English locale
+Running provision script
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+Platform: x86_64-redhat-linux-gnu (64-bit)
+'citation()' on how to cite R or R packages in publications.
+
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+Type 'demo()' for some demos, 'help()' for on-line help, or
+You are welcome to redistribute it under certain conditions.
+Type 'q()' to quit R.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Running provision script
+'citation()' on how to cite R or R packages in publications.
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Copyright (C) 2018 The R Foundation for Statistical Computing
+'help.start()' for an HTML browser interface to help.
+
+Type 'q()' to quit R.
+
+You are welcome to redistribute it under certain conditions.
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+> 
+
+> 
+  Natural language support but running in an English locale
+
+
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+R is a collaborative project with many contributors.
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Platform: x86_64-redhat-linux-gnu (64-bit)
+'citation()' on how to cite R or R packages in publications.
+
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+Type 'demo()' for some demos, 'help()' for on-line help, or
+You are welcome to redistribute it under certain conditions.
+'help.start()' for an HTML browser interface to help.
+Type 'license()' or 'licence()' for distribution details.
+Type 'q()' to quit R.
+
+
+  Natural language support but running in an English locale
+> devtools::install_github('HBGD-UCB/longbowRiskFactors')
+
+> 
+R is a collaborative project with many contributors.
+> 
+Type 'contributors()' for more information and
+
+'citation()' on how to cite R or R packages in publications.
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+
+Copyright (C) 2018 The R Foundation for Statistical Computing
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+
+Type 'q()' to quit R.
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+
+You are welcome to redistribute it under certain conditions.
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+> 
+
+
+R is a collaborative project with many contributors.
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+Type 'contributors()' for more information and
+Copyright (C) 2018 The R Foundation for Statistical Computing
+'citation()' on how to cite R or R packages in publications.
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+'help.start()' for an HTML browser interface to help.
+You are welcome to redistribute it under certain conditions.
+Type 'q()' to quit R.
+Type 'license()' or 'licence()' for distribution details.
+
+
+> devtools::install_github('jeremyrcoyle/skimr@vector_types')
+  Natural language support but running in an English locale
+> 
+
+> 
+R is a collaborative project with many contributors.
+
+Type 'contributors()' for more information and
+R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
+'citation()' on how to cite R or R packages in publications.
+Platform: x86_64-redhat-linux-gnu (64-bit)
+
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+'help.start()' for an HTML browser interface to help.
+You are welcome to redistribute it under certain conditions.
+Type 'q()' to quit R.
+
+> devtools::install_github('tlverse/delayed')
+> 
+> 
+Starting analysis
+
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+  ordinary text without R code
+
+
+> devtools::install_github('tlverse/delayed')
+  |                                                                         |....                                                             |   7%
+> 
+label: setup (with options) 
+> 
+List of 1
+Starting analysis
+ $ include: logi FALSE
+
+
+
+  |                                                                         |......                                                           |  10%
+processing file: REPORT.Rmd
+  ordinary text without R code
+  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
+
+  ordinary text without R code
+  |                                                                         |.........                                                        |  13%
+
+  |                                                                         |....                                                             |   7%
+label: setup (with options) 
+List of 1
+ $ message: logi FALSE
+ $ include: logi FALSE
+
+
+Loading required package: graphics
+  |                                                                         |......                                                           |  10%
+  ordinary text without R code
+FALSENULL
+
+  |                                                                         |.........                                                        |  13%
+  ordinary text without R code
+label: params (with options) 
+
+List of 2
+  |                                                                         |.............                                                    |  20%
+label: preprocessing
+ $ message: logi FALSE
+
+Loading required package: graphics
+feducyrsever_stuntedidc("agecat", "studyid", "country")
+FALSENULL
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |.............                                                    |  20%
+label: preprocessing
+  |                                                                         |...............                                                  |  23%
+  |                                                                         |...............                                                  |  23%
+   inline R code fragments
+   inline R code fragments
+
+
+  |                                                                         |.................                                                |  27%
+  |                                                                         |.................                                                |  27%
+label: print_adjustment_set (with options) 
+label: print_adjustment_set (with options) 
+List of 1
+List of 1
+ $ results: chr "asis"
+ $ results: chr "asis"
+
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+
+  |                                                                         |......................                                           |  33%
+  |                                                                         |......................                                           |  33%
+label: print_strata_variables (with options) 
+label: print_strata_variables (with options) 
+List of 1
+List of 1
+ $ results: chr "asis"
+
+ $ results: chr "asis"
+  |                                                                         |........................                                         |  37%
+
+  ordinary text without R code
+  |                                                                         |........................                                         |  37%
+
+  ordinary text without R code
+  |                                                                         |..........................                                       |  40%
+
+  |                                                                         |..........................                                       |  40%
+  |                                                                         |............................                                     |  43%
+  ordinary text without R code
+  ordinary text without R code
+
+
+  |                                                                         |..............................                                   |  47%
+  |                                                                         |..............................                                   |  47%
+label: print_strata (with options) 
+List of 1
+List of 1
+ $ results: chr "asis"
+ $ results: chr "asis"
+
+  |                                                                         |................................                                 |  50%
+  |                                                                         |................................                                 |  50%
+  ordinary text without R code
+  ordinary text without R code
+
+
+  |                                                                         |...................................                              |  53%
+  |                                                                         |...................................                              |  53%
+label: drop_strata (with options) 
+label: drop_strata (with options) 
+List of 1
+List of 1
+ $ results: chr "asis"
+
+  |                                                                         |.....................................                            |  57%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  60%
+label: stratified_tmle (with options) 
+List of 1
+ $ message: logi FALSE
+
+tmle for:	agecat: 12 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 12 months, studyid: ki0047075b-MAL-ED, country: PERU
+tmle for:	agecat: 12 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+tmle for:	agecat: 12 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 12 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 12 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 12 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 12 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 12 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 12 months, studyid: ki1135781-COHORTS, country: INDIA
+tmle for:	agecat: 12 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 12 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 12 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 12 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 12 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 18 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 18 months, studyid: ki0047075b-MAL-ED, country: SOUTH AFRICA
+tmle for:	agecat: 18 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 18 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 18 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 18 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 18 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 18 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 18 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 18 months, studyid: kiGH5241-JiVitA-4, country: BANGLADESH
+tmle for:	agecat: 24 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 24 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 24 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 24 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 24 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 3 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 3 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 3 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 3 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 3 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 3 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 3 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 3 months, studyid: ki1135781-COHORTS, country: INDIA
+tmle for:	agecat: 3 months, studyid: ki1135781-COHORTS, country: INDIA
+tmle for:	agecat: 3 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 3 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+tmle for:	agecat: 6 months, studyid: ki0047075b-MAL-ED, country: INDIA
+tmle for:	agecat: 6 months, studyid: ki1000304b-SAS-CompFeed, country: INDIA
+tmle for:	agecat: 6 months, studyid: ki1017093c-NIH-Crypto, country: BANGLADESH
+tmle for:	agecat: 6 months, studyid: ki1113344-GMS-Nepal, country: NEPAL
+tmle for:	agecat: 6 months, studyid: ki1126311-ZVITAMBO, country: ZIMBABWE
+tmle for:	agecat: 6 months, studyid: ki1135781-COHORTS, country: PHILIPPINES
+tmle for:	agecat: 6 months, studyid: ki1148112-LCNI-5, country: MALAWI
+tmle for:	agecat: 6 months, studyid: kiGH5241-JiVitA-3, country: BANGLADESH
+  |                                                                         |.........................................                        |  63%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  67%
+label: save_results
+label: save_results
+  |                                                                         |..............................................                   |  70%
+  ordinary text without R code
+
+
+  |                                                                         |................................................                 |  73%
+  |                                                                         |................................................                 |  73%
+label: plot_tsm
+label: plot_tsm
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  ordinary text without R code
+
+  |                                                                         |....................................................             |  80%
+label: plot_rr
+  |                                                                         |......................................................           |  83%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  87%
+label: plot_paf
+  |                                                                         |..........................................................       |  90%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  93%
+label: plot_par
+  |                                                                         |...............................................................  |  97%
+  ordinary text without R code
+  ordinary text without R code
+
+
+  |                                                                         |.................................................................| 100%
+  |                                                                         |.................................................................| 100%
+label: results_tables (with options) 
+List of 1
+ $ results: chr "asis"
+ $ results: chr "asis"
+
+
+
+output file: REPORT.knit.md
+
+/usr/local/bin/pandoc +RTS -K512m -RTS REPORT.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output /tmp/2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template /data/R/x86_64-redhat-linux-gnu-library/3.4/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmplaKjEf/rmarkdown-str4b7c27ede827.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' 
+
+Output created: /tmp/2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT.html
+[1] "/tmp/2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT.html"
+Output created: /tmp/2f540e8e-26d6-410a-8d37-e60946f8c8d9/REPORT.html
+[1] "/tmp/2f540e8e-26d6-410a-8d37-e60946f8c8d9/REPORT.html"
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/inputs.json
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/REPORT.Rmd
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/obs_counts.rdata
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/inputs.json
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/results.rdata
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/obs_counts.rdata
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT_files/
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/results.rdata
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT_files/figure-html/
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/REPORT_files/
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT_files/figure-html/plot_tsm-1.png
+2f540e8e-26d6-410a-8d37-e60946f8c8d9/REPORT_files/figure-html/
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT_files/figure-html/plot_rr-1.png
+2cd0bdbd-3230-4bcf-958a-6896d482d32c/REPORT_files/figure-html/plot_paf-1.png
+{"status": "success"}

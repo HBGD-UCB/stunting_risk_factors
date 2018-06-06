@@ -277,7 +277,7 @@ editor_options:
   
   
   
-## Proportion of children who were stunted between birth and 3 months who recovered by 24 months  
+## Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-71.png)<!-- -->
@@ -286,40 +286,22 @@ editor_options:
 ![](risk_factor_report_files/figure-html/plot_pooled-72.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-73.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-74.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/plot_pooled-75.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/plot_pooled-76.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-77.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-78.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/plot_pooled-79.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-80.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-81.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/plot_pooled-82.png)<!-- -->
 
   
   
@@ -582,7 +564,7 @@ editor_options:
   
   
   
-## Proportion of children who were stunted between birth and 3 months who recovered by 24 months  
+## Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-71.png)<!-- -->
@@ -591,40 +573,22 @@ editor_options:
 ![](risk_factor_report_files/figure-html/rr_forest-72.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-73.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-74.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/rr_forest-75.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/rr_forest-76.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/rr_forest-77.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/rr_forest-78.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/rr_forest-79.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/rr_forest-80.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/rr_forest-81.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/rr_forest-82.png)<!-- -->
 
   
   
@@ -636,39 +600,84 @@ editor_options:
 ## Cumulative incidence of stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-1.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-2.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-3.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-4.png)<!-- -->
 
   
+
+```
+## Warning: Removed 13 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-5.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-6.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-7.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-8.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-9.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-10.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-11.png)<!-- -->
 
   
@@ -678,39 +687,94 @@ editor_options:
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-13.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-14.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-15.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-16.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-17.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-18.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-19.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-20.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-21.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-22.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-23.png)<!-- -->
 
   
@@ -720,81 +784,181 @@ editor_options:
 ## Point prevalence of severe stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-24.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-25.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-26.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-27.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-28.png)<!-- -->
 
   
+
+```
+## Warning: Removed 13 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-29.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-30.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-31.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-32.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-34.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-35.png)<!-- -->
 
   
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-36.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-37.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-38.png)<!-- -->
 
   
+
+```
+## Warning: Removed 1 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-39.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-40.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-41.png)<!-- -->
 
   
+
+```
+## Warning: Removed 1 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-42.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-43.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-44.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-45.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-46.png)<!-- -->
 
   
@@ -804,42 +968,97 @@ editor_options:
 ## Point prevalence of stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-47.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-48.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-49.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-50.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-51.png)<!-- -->
 
   
+
+```
+## Warning: Removed 15 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-52.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-53.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-54.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-55.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-56.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-57.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-58.png)<!-- -->
 
   
@@ -849,46 +1068,96 @@ editor_options:
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-60.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-61.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-62.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-63.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-64.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-65.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-66.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-67.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-68.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-69.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/par_forest-70.png)<!-- -->
 
   
   
   
   
-## Proportion of children who were stunted between birth and 3 months who recovered by 24 months  
+## Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-71.png)<!-- -->
@@ -897,40 +1166,22 @@ editor_options:
 ![](risk_factor_report_files/figure-html/par_forest-72.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-73.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-74.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/par_forest-75.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/par_forest-76.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/par_forest-77.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/par_forest-78.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/par_forest-79.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/par_forest-80.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/par_forest-81.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/par_forest-82.png)<!-- -->
 
   
   
@@ -942,39 +1193,84 @@ editor_options:
 ## Cumulative incidence of stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-1.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-2.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-3.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-4.png)<!-- -->
 
   
+
+```
+## Warning: Removed 13 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-5.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-6.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-7.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-8.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-9.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-10.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-11.png)<!-- -->
 
   
@@ -984,39 +1280,94 @@ editor_options:
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-13.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-14.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-15.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-16.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-17.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-18.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-19.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-20.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-21.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-22.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-23.png)<!-- -->
 
   
@@ -1026,81 +1377,181 @@ editor_options:
 ## Point prevalence of severe stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-24.png)<!-- -->
 
   
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-25.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-26.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-27.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-28.png)<!-- -->
 
   
+
+```
+## Warning: Removed 13 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-29.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-30.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-31.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-32.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-33.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-34.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-35.png)<!-- -->
 
   
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-36.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-37.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-38.png)<!-- -->
 
   
+
+```
+## Warning: Removed 1 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-39.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-40.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-41.png)<!-- -->
 
   
+
+```
+## Warning: Removed 1 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-42.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-43.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-44.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-45.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-46.png)<!-- -->
 
   
@@ -1110,42 +1561,97 @@ editor_options:
 ## Point prevalence of stunting  
   
 ### Child characteristics  
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-47.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-48.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-49.png)<!-- -->
 
   
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-50.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-51.png)<!-- -->
 
   
+
+```
+## Warning: Removed 15 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-52.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-53.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-54.png)<!-- -->
 
   
   
   
 ### Household characteristics  
+
+```
+## Warning: Removed 8 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-55.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-56.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-57.png)<!-- -->
 
   
+
+```
+## Warning: Removed 7 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-58.png)<!-- -->
 
   
@@ -1155,46 +1661,96 @@ editor_options:
   
   
 ### Maternal characteristics  
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-60.png)<!-- -->
 
   
+
+```
+## Warning: Removed 9 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-61.png)<!-- -->
 
   
+
+```
+## Warning: Removed 3 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-62.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-63.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-64.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-65.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-66.png)<!-- -->
 
   
+
+```
+## Warning: Removed 4 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-67.png)<!-- -->
 
   
   
   
 ### Paternal characteristics  
+
+```
+## Warning: Removed 5 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-68.png)<!-- -->
 
   
+
+```
+## Warning: Removed 2 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-69.png)<!-- -->
 
   
+
+```
+## Warning: Removed 6 rows containing missing values (geom_errorbar).
+```
+
 ![](risk_factor_report_files/figure-html/paf_forest-70.png)<!-- -->
 
   
   
   
   
-## Proportion of children who were stunted between birth and 3 months who recovered by 24 months  
+## Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months  
   
 ### Child characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-71.png)<!-- -->
@@ -1203,40 +1759,22 @@ editor_options:
 ![](risk_factor_report_files/figure-html/paf_forest-72.png)<!-- -->
 
   
+  
+  
+### Household characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-73.png)<!-- -->
 
   
+  
+  
+### Maternal characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-74.png)<!-- -->
 
   
 ![](risk_factor_report_files/figure-html/paf_forest-75.png)<!-- -->
 
   
-  
-  
-### Household characteristics  
 ![](risk_factor_report_files/figure-html/paf_forest-76.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/paf_forest-77.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/paf_forest-78.png)<!-- -->
-
-  
-  
-  
-### Maternal characteristics  
-![](risk_factor_report_files/figure-html/paf_forest-79.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/paf_forest-80.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/paf_forest-81.png)<!-- -->
-
-  
-![](risk_factor_report_files/figure-html/paf_forest-82.png)<!-- -->
 
   
   
