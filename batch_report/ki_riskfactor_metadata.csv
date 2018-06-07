@@ -3,7 +3,7 @@ birthlen,Birth length,Child characteristics,Centimeters,risk factor
 birthwt,Birthweight,Child characteristics,Kilograms,risk factor
 brthmon,Calendar month of birth,Child characteristics,,risk factor
 enstunt,Stunted at enrollment,Child characteristics,,risk factor
-ever_stunted,Cumulative incidence of stunting,,,outcome
+ever_stunted,Cumulative incidence of stunting from birth to 24 months,,,outcome
 hdlvry,Child delivered at home,Child characteristics,,risk factor
 sex,Child's sex,Child characteristics,,risk factor
 vagbrth,Vaginal delivery,Child characteristics,,risk factor
@@ -13,7 +13,7 @@ hhwealth_quart,Asset based wealth index,Household characteristics,,risk factor
 nchldlt5,Number of children in the household under 5 years,Household characteristics,,risk factor
 nhh,Number of people in the household,Household characteristics,,risk factor
 nrooms,Number of rooms in household,Household characteristics,,risk factor
-gagebrth,Gestational age at birth,Maternal characteristics,Days,risk factor
+gagebrth,Gestational age at birth in days,Child characteristics,Days,risk factor
 mage,Maternal age,Maternal characteristics,,risk factor
 meducyrs,Mother's education,Maternal characteristics,Years,risk factor
 mhtcm,Maternal height,Maternal characteristics,Centimeters,risk factor
@@ -26,4 +26,4 @@ feducyrs,Father's education,Paternal characteristics,Years,risk factor
 fhtcm,Father height,Paternal characteristics,Centimeters,risk factor
 sstunted,Point prevalence of severe stunting,,,outcome
 stunted,Point prevalence of stunting,,,outcome
-s03rec24,"Proportion of children who were stuntedbetween birth and 3 months who recovered by 24 months",,,
+s03rec24,Proportion of children who were stunted between birth and 3 months who recovered by 24 months,,,

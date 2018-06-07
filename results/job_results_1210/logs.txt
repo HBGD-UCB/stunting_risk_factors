@@ -1,177 +1,0 @@
-[jeremy.coyle@54.242.25.233] Executing task 'upload_to_ghap'
-[jeremy.coyle@54.242.25.233] run: mkdir -p /tmp/9e87fb50-326b-427f-9d3c-ed8b9f66ebe3
-Not going to clone git repo since it already exists
-[jeremy.coyle@54.242.25.233] run: mkdir -p /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539
-[jeremy.coyle@54.242.25.233] put: /tmp/tmpwtjsauxz/script.Rmd -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/script.Rmd
-Put code at /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/script.Rmd
-[jeremy.coyle@54.242.25.233] put: /app/runner.R -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/runner.R
-[jeremy.coyle@54.242.25.233] put: /tmp/tmpwtjsauxz/inputs.json -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/inputs.json
-Put inputs at /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/inputs.json
-[jeremy.coyle@54.242.25.233] put: /tmp/tmpwtjsauxz/provision.sh -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/provision.sh
-Put provision script at /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/provision.sh
-Output PUT URL
-https://tlapp.s3.amazonaws.com/9e87fb50-326b-427f-9d3c-ed8b9f66ebe3.tar.gz?AWSAccessKeyId=AKIAIROBNIBGQH5O7Q5A&Signature=B4cvzl8jQA3CrwVK%2BOBBntac0Ng%3D&Expires=1530901907
-Command to run:
-Rscript --default-packages=methods,stats,utils /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/runner.R /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/script.Rmd /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/inputs.json /tmp/9e87fb50-326b-427f-9d3c-ed8b9f66ebe3
-[jeremy.coyle@54.242.25.233] put: /tmp/tmpwtjsauxz/x.py -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/x.py
-Put code at /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/x.py
-[jeremy.coyle@54.242.25.233] put: /tmp/tmpwtjsauxz/wrapper.sh -> /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/wrapper.sh
-Put code at /tmp/71b4f061-178d-4c19-9597-d2d1b6b1e539/wrapper.sh
-[jeremy.coyle@54.242.25.233] run: export TLAPP_TOKEN=*RBvH3ehiwubq?; export TLAPP_LOGS_URL=https://www.longbowapp.com/jobs/1210/append_log/; screen -d -m python x.py; sleep 1
-Making sure longbowtools package is available for runner
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> if (!require('devtools')) install.packages('devtools', repos = 'http://cran.rstudio.com/')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/longbowtools')
-> 
-> 
-Running provision script
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('HBGD-UCB/longbowRiskFactors')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('jeremyrcoyle/skimr@vector_types')
-> 
-> 
-
-R version 3.4.4 (2018-03-15) -- "Someone to Lean On"
-Copyright (C) 2018 The R Foundation for Statistical Computing
-Platform: x86_64-redhat-linux-gnu (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-  Natural language support but running in an English locale
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
-> devtools::install_github('tlverse/delayed')
-> 
-> 
-Starting analysis
-
-
-processing file: REPORT.Rmd
-  |                                                                         |                                                                 |   0%  |                                                                         |..                                                               |   3%
-  ordinary text without R code
-
-  |                                                                         |....                                                             |   7%
-label: setup (with options) 
-List of 1
- $ include: logi FALSE
-
-  |                                                                         |......                                                           |  10%
-  ordinary text without R code
-
-  |                                                                         |.........                                                        |  13%
-label: params (with options) 
-List of 2
- $ warning: logi FALSE
- $ message: logi FALSE
-
-Loading required package: graphics
-gagebrths03rec24idc("agecat", "studyid", "country")
-FALSENULL
-  |                                                                         |...........                                                      |  17%
-  ordinary text without R code
-
-  |                                                                         |.............                                                    |  20%
-label: preprocessing
-  |                                                                         |...............                                                  |  23%
-   inline R code fragments
-
-  |                                                                         |.................                                                |  27%
-label: print_adjustment_set (with options) 
-List of 1
- $ results: chr "asis"
-
-  |                                                                         |....................                                             |  30%
-  ordinary text without R code
-
-  |                                                                         |......................                                           |  33%
-label: print_strata_variables (with options) 
-List of 1
- $ results: chr "asis"
-{"status": "success"}

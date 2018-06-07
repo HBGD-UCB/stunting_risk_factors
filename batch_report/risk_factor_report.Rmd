@@ -3,11 +3,11 @@ title: "Risk Factors of Stunting"
 author: "Jade Benjamin-Chung, Andrew N. Mertens, Esther Chung, Jeremy Coyle, Oleg Sofrygin, Nima Hejazi, Ivana Malenica, Alan E. Hubbard, Mark J. van der Laan, John M. Colford, Jr., Benjamin F. Arnold"
 date: "2018-06-14"
 output:
-  pdf_document:
-    toc: true
   html_document:
     keep_md: yes
     self_contained: yes
+    toc: true
+  pdf_document:
     toc: true
 editor_options:
   chunk_output_type: console
@@ -69,7 +69,7 @@ results[,agecat:=factor(agecat, levels=agecat_levels_reduced)]
 
 ```
 
-# Pooled Results
+# Relative risk pooled across cohorts
 
 ```{r do_pooling, warning=FALSE}
 
@@ -193,7 +193,7 @@ strata_vars <- c("outcome_label","intervention_category","intervention_label")
 hierarchical_plot_output(pooled_rrs, strata_vars, rr_pooled_plot, 2)
 ```
 
-# Appendix 1 - Relative Risk Forest Plots
+# Appendix 1 - Relative risk stratified by cohort
 ```{r rr_forest, results="asis", fig.height=9,fig.width=7, warning=FALSE}
 
 rr_with_pooled <- rbind(rr_results, pooled_rrs, fill=TRUE)
@@ -223,15 +223,15 @@ strata_vars <- c("outcome_label","intervention_category","intervention_label")
 hierarchical_plot_output(rr_with_pooled, strata_vars, rr_forest_plot, 2)
 ```
 
-# Appendix 2 - Population Attributable Risk Forest Plots
+# Appendix 2 - Population Attributable Risk stratified by cohort
 
-```{r par_forest, results="asis", fig.height=9,fig.width=7}
+```{r par_forest, results="asis", fig.height=9,fig.width=7, warning=FALSE}
 par_results <- results[type=="PAR"]
 par_results[,sig:=0<ci_lower|ci_upper<0]
 par_results[,sig_alpha:=0.3+0.7*sig]
 
 par_forest_plot <- function(data, strata_level){
-  title <- sprintf("%s\nreference level:%s",strata_level, data$baseline_level[1])
+  title <- sprintf("%s\nreference level:%s",strata_level, data$intervention_level[1])
   par_plot <- ggplot(data,aes(x=study_country,y=estimate,ymin=ci_lower,ymax=ci_upper))+
     geom_point(aes(alpha=sig_alpha), size=2)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
@@ -247,15 +247,15 @@ hierarchical_plot_output(par_results, strata_vars, par_forest_plot, 2)
 
 ```
 
-# Appendix 3 - Population Attributable Fraction Forest Plots
+# Appendix 3 - Population Attributable Fraction stratified by cohort
 
-```{r paf_forest, results="asis", fig.height=9,fig.width=7}
+```{r paf_forest, results="asis", fig.height=9,fig.width=7, warning=FALSE}
 paf_results <- results[type=="PAF"]
 paf_results[,sig:=0<ci_lower|ci_upper<0]
 paf_results[,sig_alpha:=0.3+0.7*sig]
 
 paf_forest_plot <- function(data, strata_level){
-  title <- sprintf("%s\nreference level:%s",strata_level, data$baseline_level[1])
+  title <- sprintf("%s\nreference level:%s",strata_level, data$intervention_level[1])
   paf_plot <- ggplot(data,aes(x=study_country,y=estimate,ymin=ci_lower,ymax=ci_upper))+
     geom_point(aes(alpha=sig_alpha), size=2)+
     geom_errorbar(aes(alpha=sig_alpha*0.7),width=0,size=2)+
